@@ -32,9 +32,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/techfiniteblog
-    username: techfiniteblog
-    password:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -43,6 +43,7 @@ spring:
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
+    default-schema: techfinite
   mail:
     host: localhost
     port: 25

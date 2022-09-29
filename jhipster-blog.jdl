@@ -6,6 +6,7 @@ application {
     packageName com.techfinite.jhipster.blog
     prodDatabaseType postgresql
     devDatabaseType postgresql
+    databaseType sql
     buildTool maven
   }
   entities *
